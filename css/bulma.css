@@ -4751,7 +4751,7 @@ a.box:active {
 
 .table {
   background-color: hsl(0, 0%, 21%);
-  color: #363636;
+  color: hsl(0, 0%, 21%);
   margin-bottom: 1.5rem;
 }
 
