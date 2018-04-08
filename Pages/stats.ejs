@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="css/bulma.css">
+		<link rel="icon" href="<%= client.user.avatarURL %>" type="image/png">
+		<title>Apollo - Stats</title>
+	</head>
+	<body>
+		<nav class="navbar is-black">
+			<div class="navbar-brand">
+				<a class="navbar-item">
+					<p>
+						<strong>Apollo</strong>
+					</p>
+				</a>
+				<a href="https://apollobot.tk/index.html" class="navbar-item">
+					<p>
+						Home
+					</p>
+				</a>
+				<a href="https://apollobot.tk/commands.html" class="navbar-item">
+					<p>
+						Commands
+					</p>
+				</a>
+				<a href="https://apollobot.tk/features.html" class="navbar-item">
+					<p>
+						Features
+					</p>
+				</a>
+				<a href="https://apollobot.tk/stats" class="navbar-item">
+					<p>
+						Stats
+					</p>
+				</a>
+				<a href="https://discordapp.com/oauth2/authorize?client_id=418816881676255242&scope=bot&permissions=8" class="navbar-item">
+					<p>
+						Add to your server
+					</p>
+				</a>
+		
+				<div class="navbar-burger">
+					<span></span>
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+			</div>
+		</nav>
+
+		<div class="hero is-fullheight" style="background-color: hsl(0, 0%, 21%)">
+			<div class="container has-text-centered">
+				<h1 class="title is-1 has-text-white">Stats</h1>
+				<h2 class="subtitle is-4 has-text-white">Here are some basic stats for Apollo.</h2>
+				<div class="columns">
+					<div class="column">
+						<div class="box">
+							<p class="title is-2">Server Count</p>
+							<br>
+							<p class="subtitle is-3"><%= client.guilds.size %></p>
+							<br>
+							<br>
+							<p class="title is-2">User Count</p>
+							<br>
+							<p class="subtitle is-3"><%= client.users.size %></p>
+							<br>
+							<br>
+							<p class="title is-2">Channel Count</p>
+							<br>
+							<p class="subtitle is-3"><%= client.channels.size %></p>
+						</div>
+						<br>
+						<br>
+						<p class="subtitle is-6 has-text-centered has-text-white">
+							Huge thanks to <a href="https://twitter.com/mas0ngamingHD" class="credit">Mason</a> for helping me make this section of the site.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<style>
+			a:hover, credit{
+				color: lightblue;
+			}
+		</style>
+	</body>
+</html>
